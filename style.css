@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  :root {
+    --primary: rgba(23, 190, 187, 1);
+    --secondary: rgba(240, 166, 202, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(120deg, var(--primary), var(--secondary));
+    background-size: auto;
+    overflow-y: scroll; 
+  }
+  
+  main {
+    overflow-y: auto;
+    display: flex;
+  }
+  
+  .bank-banner {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    line-height: 1.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .message-banner {
+    background: #a43d8c;
+    color: white;
+    line-height: 1.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+  }
+  
+
+  .create-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    margin-top: 120px;
+  }
+  
+  .bank-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  .transfer-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+  .create-container,
+  .bank-container,
+  .transfer-container {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .bank-balance,
+  .bank-amount,
+  .recipient,
+  .accountNumber,
+  .transfer-balance,
+  .recipient-amount,
+  .bank-account-owner,
+  .bank-account-number,
+  .createButton,
+  .transferButton,
+  .depWithButton,
+  .pin {
+    padding: 1rem;
+  }
+  
+  input {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 40px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+    color: white;
+  }
+  
+  button {
+    margin: 5px;
+    background: transparent;
+    border: 1px solid #20887004;
+    background: #208870;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+  }
+  
+  button:hover {
+    background: #a43d8c;
+    color: white;
+  }
+
+  /* Small screens */
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  
+  main .bank-banner {
+    font-size: 18px;
+  }
+  
+  main .bank-container {
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  main .create-container {
+    margin-top: 50px;
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  main .transfer-container {
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  .bank-name,
+  .owner,
+  .balance,
+  .amount,
+  .recipient,
+  .accountNumber,
+  .recipient-amount,
+  .pin {
+    padding: 0.5rem;
+  }
+  
+  main input {
+    padding-right: 30px;
+  }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .bank-banner {
+    font-size: 22px;
+  }
+  
+  main .bank-container {
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  main .create-container {
+    margin-top: 50px;
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  main .transfer-container {
+    min-height: auto;
+    max-height: auto;
+  }
+  
+}

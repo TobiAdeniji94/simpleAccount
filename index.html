@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Bank App</title>
+</head>
+<body>
+  <div class="bank-banner">
+      
+    <div class="bank-info">
+      <span class="bank-name">NitHub Bank</span>
+    </div>
+  </div>
+  <div class="message-banner">
+    <div class="message-info">
+      <span id="message"></span>
+    </div>
+  </div>
+  <main>
+    <div class="create-container">
+      <div class="bank-account-owner">
+        <label for="bank-account-owner">Name:</label>
+        <input type="text" id="bank-account-owner" />
+      </div>
+      <div class="pin">
+        <label for="pin">Account PIN:</label>
+        <input type="password" id="pin" />
+      </div>
+      <div class="bank-account-number">
+        <label for="bank-account-number">Account Number:</label>
+        <span id="bank-account-number"></span>
+      </div>
+      <div class="createButton">
+        <button id="createBtn">Create User</button> 
+      </div>
+    </div>
+
+    <div class="bank-container">
+      <div class="bank-balance">
+        <label for="bank-balance">Account Balance:</label>
+        <span id="bank-Balance"></span>
+      </div>
+      <div class="accountNumber">
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="account-number" />
+      </div>
+      <div class="bank-amount">
+        <label for="bank-amount">Amount:</label>
+        <input type="number" id="bank-amount" />
+      </div>
+      <div class="pin">
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" />
+      </div>
+      <div class="depWithButton">
+        <button id="depositBtn">Deposit</button>
+        <button id="withdrawBtn">Withdraw</button>
+      </div>
+    </div>
+
+    <div class="transfer-container">
+      <div class="transfer-balance">
+        <label for="transfer-balance">Recipient Account Balance:</label>
+        <span id="transfer-balance"></span>
+      </div>
+      <div class="recipient">
+        <label for="recipientAccountNumber">Recipient Account Number:</label>
+        <input type="text" id="recipientAccountNumber" />
+      </div>
+      <div class="recipient-amount">
+        <label for="recipient-amount">Amount:</label>
+        <input type="number" id="recipient-amount" />
+      </div>
+      <div class="transferButton">
+        <button id="transferBtn">Transfer</button>
+      </div>
+    </div>
+  </main>
+  <script src="src/account.js"></script>
+</body>
+</html>
